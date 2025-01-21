@@ -1,5 +1,5 @@
 
-#Stock Portfolio Tracker
+# Stock Portfolio Tracker
 
 ## Overview
 The Portfolio Tracker is a web application designed to help users manage and track their stock investments. It allows users to add stocks, view their total portfolio value, gain/loss, and identify the top-performing stock.
