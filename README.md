@@ -31,7 +31,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 - Thanks to [Font Awesome](https://fontawesome.com/) for the icons used in the application.
 - Inspired by various portfolio tracking applications.
-
- 
-
-Feel free to replace `yourusername` in the installation section with your actual GitHub username and make any other adjustments as necessary!
