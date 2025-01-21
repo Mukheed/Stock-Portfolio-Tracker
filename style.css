@@ -1,0 +1,147 @@
+body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+	background-image: url("https://www.shutterstock.com/image-illustration/blue-room-3d-background-260nw-1024333018.jpg"); /* Replace with your image URL or path */
+	background-size: cover;
+    	background-position: center;
+    	background-attachment: fixed;
+   
+        }
+         .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a202c;
+        }
+        .header button {
+            background-color: #3182ce;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+        .header button:hover {
+            background-color: #2b6cb0;
+        }
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .metric {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .metric i {
+            font-size: 2rem;
+            margin-right: 20px;
+        }
+        .metric p {
+            margin: 0;
+        }
+        .metric .title {
+            font-size: 0.875rem;
+            color: #718096;
+        }
+        .metric .value {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #1a202c;
+        }
+        .form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .form h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .form .form-group {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .form input {
+            padding: 10px;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+        }
+        .form button {
+            background-color: #3182ce;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form button:hover {
+            background-color: #2b6cb0;
+        }
+        .table-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        thead {
+            background-color: #343a40; 
+        	color: white;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+        td {
+            font-size: 0.875rem;
+            color: #4a5568;
+        }
+        .actions button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .actions .edit {
+            color: #3182ce;
+        }
+        .actions .delete {
+            color: #e53e3e;
+        }

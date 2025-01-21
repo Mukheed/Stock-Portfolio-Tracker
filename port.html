@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>Portfolio Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Portfolio Tracker</h1>
+            <button id="addStockButton">
+                <i class="fas fa-plus"></i>
+                Add Stock
+            </button>
+        </div>
+        <div class="metrics">
+            <div class="metric">
+                <i class="fas fa-dollar-sign" style="color: #48bb78;"></i>
+                <div>
+                    <p class="title">Total Value</p>
+                    <p class="value" id="totalValue">$0.00</p>
+                </div>
+            </div>
+            <div class="metric">
+                <i class="fas fa-chart-line" style="color: #4299e1;"></i>
+                <div>
+                    <p class="title">Total Gain/Loss</p>
+                    <p class="value" id="totalGainLoss">$0.00</p>
+                </div>
+            </div>
+            <div class="metric">
+                <i class="fas fa-chart-area" style="color: #9f7aea;"></i>
+                <div>
+                    <p class="title">Top Performer</p>
+                    <p class="value" id="topPerformer">-</p>
+                </div>
+            </div>
+            <div class="metric">
+                <i class="fas fa-chart-bar" style="color: #ecc94b;"></i>
+                <div>
+                    <p class="title">Portfolio Size</p>
+                    <p class="value" id="portfolioSize">0 stocks</p>
+                </div>
+            </div>
+        </div>
+        <div class="form" id="addStockForm" style="display: none;">
+            <div class="form-header">
+                <h2>Add New Stock</h2>
+                <button id="closeFormButton" style="background: none; border: none; cursor: pointer;">
+                    <i class="fas fa-times" style="color: #718096;"></i>
+                </button>
+            </div>
+            <div class="form-group">
+                <input type="text" id="symbolInput" placeholder="Symbol">
+                <input type="text" id="nameInput" placeholder="Name">
+                <input type="number" id="quantityInput" placeholder="Quantity">
+                <input type="number" id="purchasePriceInput" placeholder="Purchase Price">
+                <input type="number" id="currentPriceInput" placeholder="Current Price">
+            </div>
+            <button id="saveStockButton">Add Stock</button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Purchase Price</th>
+                        <th>Current Price</th>
+                        <th>Gain/Loss</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="stocksTableBody">
+                    <!-- Stocks will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
